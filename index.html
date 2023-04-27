@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class ="conteudo">
+        <div class="titulo one">O que é um EventListener?
+            <div class="texto one hide">
+                Um EventListener torna possível a execução de alguma ação ou uma função quando o usuário interage de uma determinada forma com a interface web.<br>
+                É possível adicionar ou remover um EventListener utilizando os métodos:<br>
+                <ul>
+                    <li>
+                        - addEventListener()
+                    </li>
+                    <li>
+                        - removeEventListener()
+                    </li>
+                </ul>
+                syntax:<br>
+                <p style="color:rgb(232, 59, 59)">[add ou remove]EventListener</p>(type, listener, options)
+
+            </div>
+        </div>
+        <div class="titulo two hide">Parâmetros utilizados (type, listener, options)
+            <div class="texto two hide">
+                <ul>
+                    <li>
+                        - type
+                    </li>
+                    <li>
+                        Representa o tipo de evento que o EventListener está esperando. Ou seja, o evento que irá causar a execução de uma função ou mais.
+                    </li>
+                    <li>
+                        Existem muitos tipos de eventos que podem ser inseridos como parâmetro para o EventListener, os mais comuns e mais utilizados são os eventos de mouse e de teclado.
+                    </li>
+                    <li>
+                        Alguns exemplos são:
+                        <div class="container-events">
+                            <div class="mouse-events">
+                                <ul>
+                                    <li>
+                                        - click
+                                    </li>
+                                    <li>
+                                        - dblclick
+                                    </li>
+                                    <li>
+                                        - mouseup
+                                    </li>
+                                    <li>
+                                        - mousedown
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="keyboard-events">
+                                <ul>
+                                    <li>
+                                        - keydown
+                                    </li>
+                                    <li>
+                                        - keypress
+                                    </li>
+                                    <li>
+                                        - keyup
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="texto three hide">
+                <ul>
+                    <li>
+                        - listener
+                    </li>
+                    <li>
+                        Também conhecido como função de callback, o listener é o parâmetro que nos permite inser o que desejamos fazer assim que o evento que foi configurado no parâmetro type acontece.
+                    </li>
+                    <li>
+                        Este parâmetro normalmente é uma função, mas também pode ser configurado como null e neste caso nada acontece.
+                    </li>
+                    <li>
+                        Por padrão a função de callback (listener) recebe o objeto 'Event' que contém diversas informações sobre o evento.
+                    </li>
+                </ul>
+            </div>
+            <div class="texto four hide">
+                <ul>
+                    <li>
+                        - options
+                    </li>
+                    <li>
+                        É um parâmetro opcional que vem configuado como false por padrão.
+                    </li>
+                    <li>
+                        As opções possíveis são:<br>
+                        - capture <br>
+                        - once <br>
+                        - passive <br>
+                        - signal <br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "container-icones">
+        <ion-icon class="icone anterior hide" name="chevron-up-circle"></ion-icon>
+        <ion-icon class="icone proximo" name="chevron-down-circle"></ion-icon>
+        </div>
+    </div>
+    <div class = "pratica">
+        <ion-icon class ="icone voltar hide" name="chevron-back-circle"></ion-icon>
+
+        <div class = "exemplos hide">
+            <div class = "exemplo1">
+                <p class = "p hide">Adicionando um EventListener (exemplo 1)</p>
+                <ul class = "ul hide">
+                    <li><div class = "div exemplo1">Esta div tem um EventListener</div></li>
+                </ul>
+            </div>
+            <div class = "exemplo2">
+                <p class = "p hide">Diferentes eventos (exemplo 2)</p>
+                <ul class="ul hide">
+                    <li class="click">click</li>
+                    <li class="dbclick">dbclick</li>
+                    <li class="keypress">keypress</li>
+                </ul>
+            </div>
+            <div class = "exemplo3 hide">Este é o exemplo 3 (Diferentes funções)</div>
+            <div class = "exemplo4 hide">Este é o exemplo 4 (Mostrando o Event)</div>
+            <div class = "exemplo5 hide">Este é o exemplo 5 (Mostrando o Bubbling e o capture)</div>
+            <div class = "exemplo6 hide">Este é o exemplo 6 (Mostrando a option once)</div>
+            <div class = "exemplo7 hide">Este é o exemplo 7 (Mostrando o event.stopPropagation)</div>
+        </div>
+
+        <ion-icon class ="icone proxima hide" name="chevron-forward-circle"></ion-icon>
+
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+</body>
+</html>
