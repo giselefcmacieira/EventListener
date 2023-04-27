@@ -9,25 +9,62 @@ function mudardiv(){
     contador1++;
 }
 
-
 //Exemplo2
-const clickExemplo2 = document.querySelector('.click');
-clickExemplo2.addEventListener('click', mudarCor);
-function mudarCor(){
-    clickExemplo2.classList.toggle('vermelho');
+const clickExemplo2 = document.querySelector('.click2');
+clickExemplo2.addEventListener('click', mostraEventmouse);
+document.addEventListener('keypress', mostrarEventTeclado);
+function mostraEventmouse(event){
+    console.log(event);
+    console.log(event.target);
+}
+function mostrarEventTeclado(event){
+    const code = event.code;
+    const key = event.key;
+    document.querySelector('.exemplo2 ul').innerHTML += `
+    <li style = "font-size: 20px">code: ${code}</li>
+    <li style = "font-size: 20px">key: ${key}</li>`;
 }
 
-const dblclickExemplo2 = document.querySelector('.dbclick');
-dblclickExemplo2.addEventListener("dblclick", mudarFont);
-function mudarFont(){
-    dblclickExemplo2.classList.toggle('vermelho');
-    console.log('Esta funcionando, mas você configurou errado');
+//Exemplo3
+const clickExemplo3 = document.querySelector('.click');
+clickExemplo3.addEventListener('click', mudarCor);
+function mudarCor(event){
+    event.target.classList.toggle('vermelho');
 }
 
-const keypressExemplo2 = document.querySelector('.keypress');
-dblclickExemplo2.addEventListener("keypress", mudarFont);
-function mudarFont(){
-    dblclickExemplo2.classList.toggle('vermelho');
-    console.log('Esta funcionando, mas você configurou errado');
+const mouseoverExemplo3 = document.querySelector('.mouseover');
+mouseoverExemplo3.addEventListener("mouseover", mudarFonto);
+mouseoverExemplo3.addEventListener("mouseleave", mudarFontl);
+function mudarFonto(event){
+    event.target.classList.add('font-size');
 }
-console.log(dblclickExemplo2);
+function mudarFontl(event){
+    event.target.classList.remove('font-size');
+}
+
+const dblclickExemplo3 = document.querySelector('.dblclick');
+dblclickExemplo3.addEventListener("dblclick", mudarFontECor);
+function mudarFontECor(event){
+    event.target.classList.toggle('vermelho');
+    event.target.classList.toggle('font-size');
+}
+
+const enterExemplo3 = document.querySelector('.enter');
+const pontoExemplo3 = document.querySelector('.ponto');
+const lExemplo3 = document.querySelector('.l');
+const espaçoExemplo3 = document.querySelector('.espaço');
+document.addEventListener('keypress', alterarCor);
+function alterarCor(event){
+    console.log(event);
+    if(event.key === 'Enter'){
+        enterExemplo3.classList.toggle('vermelho');
+    }else if(event.code === 'Space'){
+        espaçoExemplo3.classList.toggle('azul');
+    }else if(event.key === '.'){
+        pontoExemplo3.classList.toggle('verde');
+    }else if(event.key === 'l'){
+        lExemplo3.classList.toggle('roxo');
+    }
+    
+}
+

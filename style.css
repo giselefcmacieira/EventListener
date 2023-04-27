@@ -65,6 +65,7 @@ li{
     height: 100%;
     background-color: blanchedalmond;
     border-radius: 8px;
+    text-align: start;
 }
 .keyboard-events{
     width: 45%;
@@ -119,23 +120,53 @@ li{
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
 }
 .exemplo2 p{
+    margin-bottom: 45px;
+}
+.exemplo2 li div{
+    width: 100%;
+    margin-top: 10px;
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 35px;
+}
+.vermelho{
+    color: red;
+}
+.font-size{
+    font-family: 'Lilita One', cursive;
+}
+.azul{
+    color: blue;
+}
+.exemplo3{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 35px;
+}
+.exemplo3 p{
     margin-bottom: 25px;
 }
-.exemplo2 li{
+.exemplo3 li div{
     display:inline;
     width: 20%;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color: bisque;
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
 }
-.vermelho{
-    color: red;
+.verde{
+    color: green;
 }
-.font-size30{
-    font-size: 30px;
+.roxo{
+    color: purple;
 }

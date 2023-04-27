@@ -117,16 +117,20 @@ function avancarExemplo (event){
     }else if(contador === 7){
         const exemplo2p = document.querySelector('.exemplo2 .p');
         const exemplo2ul = document.querySelector('.exemplo2 .ul');
-        const exemplo3 = document.querySelector('.exemplo3');
-        exemplo3.classList.remove('hide');
+        const exemplo3p = document.querySelector('.exemplo3 .p');
+        const exemplo3ul = document.querySelector('.exemplo3 .ul');
+        exemplo3p.classList.remove('hide');
+        exemplo3ul.classList.remove('hide');
         exemplo2p.classList.add('hide');
         exemplo2ul.classList.add('hide');
         contador++;
     }else if(contador === 8){
-        const exemplo3 = document.querySelector('.exemplo3');
+        const exemplo3p = document.querySelector('.exemplo3 .p');
+        const exemplo3ul = document.querySelector('.exemplo3 .ul');
         const exemplo4 = document.querySelector('.exemplo4');
         exemplo4.classList.remove('hide');
-        exemplo3.classList.add('hide');
+        exemplo3p.classList.add('hide');
+        exemplo3ul.classList.add('hide');
         contador++;
     }else if(contador === 9){
         const exemplo4 = document.querySelector('.exemplo4');
@@ -185,16 +189,20 @@ function voltarExemplo (event){
     }else if(contador === 8){
         const exemplo2p = document.querySelector('.exemplo2 .p');
         const exemplo2ul = document.querySelector('.exemplo2 .ul');
-        const exemplo3 = document.querySelector('.exemplo3');
-        exemplo3.classList.add('hide');
+        const exemplo3p = document.querySelector('.exemplo3 .p');
+        const exemplo3ul = document.querySelector('.exemplo3 .ul');
+        exemplo3p.classList.add('hide');
+        exemplo3ul.classList.add('hide');
         exemplo2p.classList.remove('hide');
         exemplo2ul.classList.remove('hide');
         contador = contador - 1;
     }else if(contador === 9){
-        const exemplo3 = document.querySelector('.exemplo3');
+        const exemplo3p = document.querySelector('.exemplo3 .p');
+        const exemplo3ul = document.querySelector('.exemplo3 .ul');
         const exemplo4 = document.querySelector('.exemplo4');
         exemplo4.classList.add('hide');
-        exemplo3.classList.remove('hide');
+        exemplo3p.classList.remove('hide');
+        exemplo3ul.classList.remove('hide');
         contador = contador - 1;
     }else if(contador === 10){
         const exemplo4 = document.querySelector('.exemplo4');
