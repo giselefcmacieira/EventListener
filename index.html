@@ -122,26 +122,26 @@
         <ion-icon class="icone proximo" name="chevron-down-circle"></ion-icon>
         </div>
     </div>
-    <div class = "pratica">
+    <div class = "pratica hide">
         <ion-icon class ="icone voltar hide" name="chevron-back-circle"></ion-icon>
 
-        <div class = "exemplos hide">
-            <div class = "exemplo1">
-                <p class = "p hide">Adicionando um EventListener (exemplo 1)</p>
-                <ul class = "ul hide">
+        <div class = "exemplos">
+            <div class = "exemplo1 hide">
+                <p class = "p">Adicionando um EventListener (exemplo 1)</p>
+                <ul class = "ul">
                     <li><div class = "div exemplo1">Esta div tem um EventListener</div></li>
                 </ul>
             </div>
-            <div class = "exemplo2">
-                <p class = "p hide">Mostrando o Event (exemplo 2)</p>
-                <ul class="ul hide">
+            <div class = "exemplo2 hide">
+                <p class = "p ">Mostrando o Event (exemplo 2)</p>
+                <ul class="ul ">
                     <li><div class="click2">click</div>
                     </li>
                 </ul>
             </div>
-            <div class = "exemplo3 ">
-                <p class = "p hide">Diferentes eventos (exemplo 3)</p>
-                <ul class="ul hide">
+            <div class = "exemplo3 hide">
+                <p class = "p">Diferentes eventos (exemplo 3)</p>
+                <ul class="ul">
                     <li style="margin-bottom: 20px"><div class="click">click</div>
                         <div class="mouseover">mouseover e mouseleave</div>
                         <div class="dblclick">dblclick</div>
@@ -153,16 +153,48 @@
                     </li>
                 </ul>
             </div>
-            <div class = "exemplo4 hide">Este é o exemplo 4 (Mostrando o Event)</div>
-            <div class = "exemplo5 hide">Este é o exemplo 5 (Mostrando o Bubbling e o capture)</div>
-            <div class = "exemplo6 hide">Este é o exemplo 6 (Mostrando a option once)</div>
-            <div class = "exemplo7 hide">Este é o exemplo 7 (Mostrando o event.stopPropagation)</div>
+            <div class = "exemplo4 hide">
+                <p class = "p ">Mostrando o Bubbling e o capture (exemplo 4)</p>
+                <div class ="avo ">avô
+                    <div class="pai ">pai
+                        <div class="filho ">filho
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "exemplo5 hide">
+                <p>Mostrando o event.stopPropagation (exemplo 5)</p>
+                <div class ="avo ">avô
+                    <div class="pai ">pai
+                        <div class="filho ">filho
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "exemplo6 hide">
+                <p>Mostrando a option once (exemplo 6)</p>
+                <div class="div-ex6">click</div>
+            </div>
+            <div class = "exemplo7 hide">
+                <p>Mostrando o removeEventListener (exemplo 7)</p>
+                <div class="div-ex7">click</div>
+                <p class="p-ex7" style="font-size: 25px"></p>
+            </div>
+            
         </div>
 
         <ion-icon class ="icone proxima hide" name="chevron-forward-circle"></ion-icon>
-
+        
     </div>
-    
+    <div class="menu-exemplos">
+        <div class="ex1">Exemplo 1</div>
+        <div class="ex2">Exemplo 2</div>
+        <div class="ex3">Exemplo 3</div>
+        <div class="ex4">Exemplo 4</div>
+        <div class="ex5">Exemplo 5</div>
+        <div class="ex6">Exemplo 6</div>
+        <div class="ex7">Exemplo 7</div>
+    </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./script.js"></script>
     <script src="./script2.js"></script>

@@ -68,3 +68,68 @@ function alterarCor(event){
     
 }
 
+//Exemplo4
+const elementoAvo = document.querySelector('.avo');
+const elementoPai = document.querySelector('.pai');
+const elementoFilho = document.querySelector('.filho');
+elementoAvo.addEventListener('click', alterarBackgroundAvo, {capture: true});
+elementoPai.addEventListener('click', alterarBackgroundPai);
+elementoFilho.addEventListener('click', alterarBackgroundFilho);
+function alterarBackgroundAvo(){
+    elementoAvo.classList.toggle('bgbranco');
+    console.log('avô');
+}
+function alterarBackgroundPai(){
+    elementoPai.classList.toggle('bgazul');
+    console.log('pai');
+}
+function alterarBackgroundFilho(){
+    elementoFilho.classList.toggle('bgroxo');
+    console.log('filho');
+}
+//,{capture: true}
+
+//Exemplo5
+const elementoAvo5 = document.querySelector('.exemplo5 .avo');
+const elementoPai5 = document.querySelector('.exemplo5 .pai');
+const elementoFilho5 = document.querySelector('.exemplo5 .filho');
+elementoAvo5.addEventListener('click', alterarBackgroundA);
+elementoPai5.addEventListener('click', alterarBackgroundP);
+elementoFilho5.addEventListener('click', alterarBackgroundF);
+function alterarBackgroundA(event){
+    elementoAvo5.classList.toggle('bgbranco');
+    console.log('avô');
+}
+function alterarBackgroundP(event){
+    elementoPai5.classList.toggle('bgazul');
+    console.log('pai');
+}
+function alterarBackgroundF(event){
+    event.stopPropagation();
+    elementoFilho5.classList.toggle('bgroxo');
+    console.log('filho');
+}
+
+//Exemplo6
+const divExemplo6 = document.querySelector('.div-ex6');
+divExemplo6.addEventListener('click', alterarBackground, {once: true});
+function alterarBackground(event){
+    event.target.classList.toggle('vermelho');
+}
+
+//Exemplo7
+let contadorr = 1;
+const divExemplo7 = document.querySelector('.div-ex7');
+divExemplo7.addEventListener('click', alterarDiv);
+divExemplo7.addEventListener('click', contarClicks);
+function alterarDiv(event){
+    if(contadorr > 3){
+        event.target.removeEventListener('click', alterarDiv);
+    }else{
+        event.target.classList.toggle('vermelho');
+    }
+}
+function contarClicks(){
+    document.querySelector('.p-ex7').innerHTML = `Este botão já foi clicado ${contadorr} vezes`;
+    contadorr++;
+}

@@ -34,9 +34,7 @@ li{
 .texto p{
     display: inline;
 }
-.hide{
-    display: none;
-}
+
 .container-icones{
     display: flex;
 }
@@ -75,7 +73,6 @@ li{
 }
 .pratica{
     width: 90%; 
-    height: 300px;
     margin: 30px auto;
     display: flex;
     align-items: center;
@@ -84,6 +81,8 @@ li{
 }
 .exemplos{
     background-color: rgba(41, 81, 214, 0.2);
+    margin: 30px auto;
+    text-align: center;
     border-radius: 6px;
     width: 100%;
     margin-left: 15px;
@@ -169,4 +168,168 @@ li{
 }
 .roxo{
     color: purple;
+}
+.exemplo4{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 35px;
+}
+.exemplo4 p{
+    margin-bottom: 25px;
+}
+.filho{
+    width: 80%;
+    margin: 10px;
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.pai{
+    width: 80%;
+    margin: 10px;
+    background-color: hotpink;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.avo{
+    width: 40%;
+    margin: 10px;
+    background-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.exemplo5{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 35px;
+}
+.exemplo5 p{
+    margin-bottom: 25px;
+}
+.filho{
+    width: 80%;
+    margin: 10px;
+    background-color: bisque;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.pai{
+    width: 80%;
+    margin: 10px;
+    background-color: hotpink;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.avo{
+    width: 40%;
+    margin: 10px;
+    background-color: teal;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.exemplo6{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 35px;
+}
+.exemplo6 p{
+    margin-bottom: 25px;
+}
+.exemplo6 div{
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 27px;
+    padding: 10px;
+}
+.exemplo7{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 35px;
+}
+.exemplo7 p{
+    margin-bottom: 25px;
+}
+.exemplo7 div{
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 27px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.bgbranco{
+    background-color: white;
+}
+.bgazul{
+    background-color: rgb(31, 172, 238);
+}
+.bgroxo{
+    background-color: rgb(171, 66, 227);
+}
+
+.menu-exemplos{
+    margin: 25px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-exemplos div{
+    background-color:rgb(138, 43, 226, 0.5);
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.hide{
+    display: none;
 }
